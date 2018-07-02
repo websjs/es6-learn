@@ -1,0 +1,7 @@
+extends layout
+
+block nav
+   ul.nav
+      each val, index in [{'link':'/let-const','text':'let-const'},{'link':'/array','text':'array'}]
+        li
+          a(href=val.link,target="_self") #{val.text}

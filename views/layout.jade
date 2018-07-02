@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    ul.nav
+      each val, index in [{'link':'/let-const','text':'let-const'},{'link':'/array','text':'array'}]
+        li
+          a(href=val.link,target="_self") #{val.text}
+    block content
+    script(src="/bundle.js")
